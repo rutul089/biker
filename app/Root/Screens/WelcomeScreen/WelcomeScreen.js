@@ -124,7 +124,7 @@ class WelcomeScreen extends Component {
             block
             style={{borderRadius: 6, backgroundColor: '#FFAE54'}}
             onPress={() => navigation.navigate('LoginScreen')}>
-            <CustomText header center semibold white>
+            <CustomText h2 center semibold white>
               Login
             </CustomText>
           </Button>
@@ -136,7 +136,7 @@ class WelcomeScreen extends Component {
               backgroundColor: '#1D7AA3',
             }}
             onPress={() => navigation.navigate('RegisterScreen')}>
-            <CustomText header center semibold white>
+            <CustomText h2 center semibold white>
               Signup
             </CustomText>
           </Button>
@@ -146,7 +146,7 @@ class WelcomeScreen extends Component {
             style={{
               marginTop: 10,
             }}>
-            <CustomText body semibold gray2>
+            <CustomText h3 semibold gray2>
               Terms of service
             </CustomText>
           </Button>

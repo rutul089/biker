@@ -1,13 +1,13 @@
-import React, {Component} from 'react';
-import {View, Text, Image, Keyboard} from 'react-native';
+import React, { Component } from 'react';
+import { View, Text, Image, Keyboard } from 'react-native';
 import styles from './LoginStyle';
 import MainHeader from 'app/Component/MainHeader';
-import {blackBack, splashlogo} from 'app/assets';
-import {Block, EditText, CustomText} from 'app/Component';
-import {Content, Container, Button} from 'native-base';
-import {sizes} from 'app/Theme';
-import {color} from 'react-native-reanimated';
-import {NavigationActions, StackActions} from 'react-navigation';
+import { left, splashlogo } from 'app/assets';
+import { Block, EditText, CustomText } from 'app/Component';
+import { Content, Container, Button } from 'native-base';
+import { sizes } from 'app/Theme';
+import { color } from 'react-native-reanimated';
+import { NavigationActions, StackActions } from 'react-navigation';
 
 class LoginScreen extends Component {
   constructor(props) {
@@ -21,7 +21,7 @@ class LoginScreen extends Component {
   }
 
   handleLogin() {
-    const {email, password} = this.state;
+    const { email, password } = this.state;
     const errors = [];
     Keyboard.dismiss();
 
@@ -33,53 +33,52 @@ class LoginScreen extends Component {
       errors.push('password');
     }
 
-    this.setState({errors});
+    this.setState({ errors });
     if (!errors.length) {
       const resetAction = StackActions.reset({
         index: 0,
-        actions: [NavigationActions.navigate({routeName: 'HomeScreen'})],
+        actions: [NavigationActions.navigate({ routeName: 'HomeScreen' })],
       });
       this.props.navigation.dispatch(resetAction);
     }
   }
 
   render() {
-    const {navigation} = this.props;
-    const {loading, errors} = this.state;
+    const { navigation } = this.props;
+    const { loading, errors } = this.state;
     const hasErrors = key => (errors.includes(key) ? styles.hasErrors : null);
     return (
-      <Container>
+      <Container style={{ backgroundColor: "#FFF" }}>
         <MainHeader
-          leftIcon={blackBack}
+          leftIcon={left}
           theme={'white'}
           bodyContent={'Login'}
           backAction={() => {
             this.props.navigation.goBack();
           }}
-          headerStyle={{backgroundColor: '#fff'}}
         />
         <Content>
           <View style={styles.container1}>
             <Image style={styles.imageStyle} source={splashlogo} />
-            <CustomText h1 bold style={{marginTop: 15}}>
+            <CustomText h1 bold style={{ marginTop: 15 }}>
               Welcome Back
             </CustomText>
           </View>
-          <View style={{padding: 30, marginTop: 20}}>
+          <View style={{ padding: 30, marginTop: 20 }}>
             <EditText
               label="Email"
               error={hasErrors('email')}
               style={[styles.input, hasErrors('email')]}
               defaultValue={this.state.email}
-              onChangeText={text => this.setState({email: text})}
+              onChangeText={text => this.setState({ email: text })}
             />
             <EditText
               secure
               label="Password"
               error={hasErrors('password')}
-              style={[styles.input, {paddingRight: 35}, hasErrors('password')]}
+              style={[styles.input, { paddingRight: 35 }, hasErrors('password')]}
               defaultValue={this.state.password}
-              onChangeText={text => this.setState({password: text})}
+              onChangeText={text => this.setState({ password: text })}
             />
             <Button
               block
@@ -89,7 +88,7 @@ class LoginScreen extends Component {
                 marginTop: 12,
               }}
               onPress={() => this.handleLogin()}>
-              <CustomText header center semibold white>
+              <CustomText h2 center semibold white>
                 Login
               </CustomText>
             </Button>

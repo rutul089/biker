@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import {
   Image,
   TouchableOpacity,
@@ -7,10 +7,10 @@ import {
   StatusBar,
 } from 'react-native';
 import styles from './MainHeaderStyle';
-import {Body, Header, Left, Right, Text, Button} from 'native-base';
-import {color, sizes} from 'app/Theme';
-import {CustomText} from 'app/Component';
-import Menu, {MenuDivider, MenuItem} from 'react-native-material-menu';
+import { Body, Header, Left, Right, Text, Button } from 'native-base';
+import { color, sizes } from 'app/Theme';
+import { CustomText } from 'app/Component';
+import Menu, { MenuDivider, MenuItem } from 'react-native-material-menu';
 import {
   iconContextmenu,
   iconLeaveCancel,
@@ -54,7 +54,7 @@ export class MainHeader extends React.PureComponent {
       rightText,
     } = this.props;
     return (
-      <Header noShadow style={[styles.headerStyle, headerStyle]}>
+      <Header noShadow={false} style={[styles.headerStyle, headerStyle]}>
         <Left style={styles.headerLeft}>
           <View style={styles.leftButton}>
             {leftIcon && (
@@ -63,13 +63,13 @@ export class MainHeader extends React.PureComponent {
                   source={this.props.leftIcon}
                   style={
                     leftIcon == 3
-                      ? {height: 25, width: 25}
+                      ? { height: 25, width: 25 }
                       : [
-                          styles.headerLeftSide,
-                          theme === 'white'
-                            ? {tintColor: color._018CCA}
-                            : {tintColor: 'white'},
-                        ]
+                        styles.headerLeftSide,
+                        theme === 'white'
+                          ? { tintColor: 'black' }
+                          : { tintColor: 'white' },
+                      ]
                   }
                 />
               </TouchableOpacity>
@@ -88,7 +88,7 @@ export class MainHeader extends React.PureComponent {
               light
               style={[
                 styles.headerBodyContent,
-                theme === 'white' ? {color: 'black'} : {color: 'white'},
+                theme === 'white' ? { color: 'black' } : { color: 'black' },
               ]}
               numberOfLines={1}>
               {this.props.bodyContent.toUpperCase()}
@@ -103,7 +103,7 @@ export class MainHeader extends React.PureComponent {
                 backgroundColor: color._018CCA,
                 padding: 5,
               }}
-              textStyles={{color: 'white', paddingRight: 5, paddingLeft: 5}}
+              textStyles={{ color: 'white', paddingRight: 5, paddingLeft: 5 }}
               onPress={() => {
                 onSubmit && onSubmit();
               }}>
@@ -112,10 +112,10 @@ export class MainHeader extends React.PureComponent {
           )}
           {isTimein && (
             <View style={styles.isTimestyle}>
-              <CustomText style={{color: 'white', fontSize: 10}}>
+              <CustomText style={{ color: 'white', fontSize: 10 }}>
                 {'Total in : '}
               </CustomText>
-              <Text style={{color: 'white', fontSize: 12}}>{timein}</Text>
+              <Text style={{ color: 'white', fontSize: 12 }}>{timein}</Text>
             </View>
           )}
           {this.props.rightText && (
@@ -137,7 +137,7 @@ export class MainHeader extends React.PureComponent {
                 source={iconLeaveDelete}
                 style={[
                   styles.headerRightSide,
-                  {tintColor: 'white', marginLeft: 10},
+                  { tintColor: 'white', marginLeft: 10 },
                 ]}
               />
             </TouchableOpacity>
@@ -148,7 +148,7 @@ export class MainHeader extends React.PureComponent {
               button={
                 <TouchableOpacity onPress={this.showMenu}>
                   <Image
-                    style={{height: 25, width: 25, tintColor: 'white'}}
+                    style={{ height: 25, width: 25, tintColor: 'white' }}
                     source={iconContextmenu}
                   />
                 </TouchableOpacity>
@@ -159,7 +159,7 @@ export class MainHeader extends React.PureComponent {
                     onChangePassItemPress && onChangePassItemPress(1);
                     this.hideMenu();
                   }}>
-                  <Text style={{fontSize: 12}}>{'Change Password'}</Text>
+                  <Text style={{ fontSize: 12 }}>{'Change Password'}</Text>
                 </MenuItem>
                 /* <MenuDivider/>
                     <MenuItem onPress={() => {
@@ -176,7 +176,7 @@ export class MainHeader extends React.PureComponent {
                   onMenuItemPress && onMenuItemPress(1);
                   this.hideMenu();
                 }}>
-                <Text style={{fontSize: 12}}>{'Logout'}</Text>
+                <Text style={{ fontSize: 12 }}>{'Logout'}</Text>
               </MenuItem>
             </Menu>
           )}

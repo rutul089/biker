@@ -30,7 +30,7 @@ const color = {
 const sizes = {
   // global sizes
   base: wp('3.4'),
-  font: wp('3.2'),
+  font: wp('3.3'),
   radius: 6,
   padding: 25,
 

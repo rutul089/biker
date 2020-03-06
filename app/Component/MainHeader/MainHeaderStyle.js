@@ -1,15 +1,22 @@
-import {StyleSheet} from 'react-native';
+import { StyleSheet } from 'react-native';
 
 import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,
 } from 'react-native-responsive-screen';
-import {color, sizes} from 'app/Theme';
+import { color, sizes } from 'app/Theme';
 
 const styles = StyleSheet.create({
   headerStyle: {
     flexShrink: 0,
-    backgroundColor: '#5AC8FA',
+    backgroundColor: '#f8f8f8',
+  },
+  headerBkp: {
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2, },
+    shadowOpacity: 0.2,
+    elevation: 2,
+    position: 'relative'
   },
   headerBody: {
     alignItems: 'center',
