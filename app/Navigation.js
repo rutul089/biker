@@ -5,6 +5,7 @@ import SplashScreen from './Root/Screens/SplashScreen';
 import WelcomeScreen from './Root/Screens/WelcomeScreen';
 import LoginScreen from './Root/Screens/LoginScreen';
 import RegisterScreen from './Root/Screens/RegisterScreen';
+import HomeScreen from './Root/Screens/HomeScreen';
 console.disableYellowBox = true;
 
 const StackScreen = createStackNavigator(
@@ -29,6 +30,12 @@ const StackScreen = createStackNavigator(
     },
     RegisterScreen: {
       screen: RegisterScreen,
+      navigationOptions: () => ({
+        header: null,
+      }),
+    },
+    HomeScreen: {
+      screen: HomeScreen,
       navigationOptions: () => ({
         header: null,
       }),

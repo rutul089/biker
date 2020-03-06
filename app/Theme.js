@@ -28,8 +28,8 @@ const color = {
 
 const sizes = {
   // global sizes
-  base: 16,
-  font: 14,
+  base: wp('3.4'),
+  font: wp('3.2'),
   radius: 6,
   padding: 25,
 
