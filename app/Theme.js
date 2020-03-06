@@ -16,6 +16,7 @@ const color = {
   _999999: '#999999',
   _0F9DEC: '#0F9DEC',
   _707070: '#707070',
+  _018CCA: '#018CCA',
   accent: '#F3534A',
   primary: '#687DFB',
   secondary: '#2BDA8E',

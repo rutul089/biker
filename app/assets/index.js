@@ -3,6 +3,7 @@ import bike from './bike.png';
 import profile from './user.png';
 import event from './event.png';
 import home from './home.png';
+import activity from './activity.png';
 import bikeshop from './bikeshop.png';
 import events from './events.png';
 import record from './record.png';
@@ -15,6 +16,7 @@ import blackBack from './back.png';
 
 export {
   splashlogo,
+  activity,
   left,
   blackBack,
   bike,
