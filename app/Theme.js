@@ -21,6 +21,7 @@ const color = {
   primary: '#687DFB',
   secondary: '#2BDA8E',
   tertiary: '#FFE358',
+  divider: '#D1D1D6',
   black: '#323643',
   white: '#FFFFFF',
   gray: '#9DA3B4',
@@ -68,4 +69,4 @@ const fonts = {
   },
 };
 
-export {color, sizes, fonts};
+export { color, sizes, fonts };

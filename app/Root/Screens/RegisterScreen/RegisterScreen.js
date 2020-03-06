@@ -38,7 +38,6 @@ class RegisterScreen extends Component {
       <Container style={{ backgroundColor: "#FFF" }}>
         <MainHeader
           leftIcon={left}
-          theme={'white'}
           bodyContent={'Sign up'}
           backAction={() => {
             this.props.navigation.goBack();

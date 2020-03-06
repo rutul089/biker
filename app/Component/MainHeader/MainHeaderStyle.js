@@ -9,7 +9,7 @@ import { color, sizes } from 'app/Theme';
 const styles = StyleSheet.create({
   headerStyle: {
     flexShrink: 0,
-    backgroundColor: '#f8f8f8',
+    backgroundColor: '#5AC8FA',
   },
   headerBkp: {
     shadowColor: '#000',
@@ -41,6 +41,7 @@ const styles = StyleSheet.create({
   headerRightSide: {
     width: 24,
     height: 24,
+    tintColor: 'black',
     resizeMode: 'contain',
   },
   headerBodyImage: {

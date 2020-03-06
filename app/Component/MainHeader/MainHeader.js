@@ -88,7 +88,7 @@ export class MainHeader extends React.PureComponent {
               light
               style={[
                 styles.headerBodyContent,
-                theme === 'white' ? { color: 'black' } : { color: 'black' },
+                theme === 'white' ? { color: 'black' } : { color: 'white' },
               ]}
               numberOfLines={1}>
               {this.props.bodyContent.toUpperCase()}

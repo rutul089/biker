@@ -51,7 +51,6 @@ class LoginScreen extends Component {
       <Container style={{ backgroundColor: "#FFF" }}>
         <MainHeader
           leftIcon={left}
-          theme={'white'}
           bodyContent={'Login'}
           backAction={() => {
             this.props.navigation.goBack();
