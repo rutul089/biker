@@ -80,8 +80,8 @@ export default class Bike extends Component {
             <ItemView item={item}
               isTime
               navigation={this.props.navigation}
-              onClick={() => {
-                this.props.navigation.navigate('BikeDetailScreen', item)
+              onClick={(e) => {
+                this.props.navigation.navigate('BikeDetailScreen', e)
               }}
               getDirection={this.handleDirectionClick}
             />} />

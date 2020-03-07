@@ -18,13 +18,11 @@ import avtar from './avtar.jpg';
 import filter from './filter.png';
 import search from './search.png';
 import close from './close.png';
-import cycle1 from './cycle1.jpg';
 import direction from './direction.png';
 import star from './star.png';
 
 export {
   star,
-  cycle1,
   direction,
   close,
   search,
