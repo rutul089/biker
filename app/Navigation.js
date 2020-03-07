@@ -8,6 +8,7 @@ import RegisterScreen from './Root/Screens/RegisterScreen';
 import HomeScreen from './Root/Screens/HomeScreen';
 import MyProfileScreen from './Root/Screens/MyProfileScreen';
 import ChangePasswordScreen from './Root/Screens/ChangePassword';
+import BikeDetailScreen from './Root/Screens/BikeDetailScreen';
 
 console.disableYellowBox = true;
 
@@ -51,6 +52,12 @@ const StackScreen = createStackNavigator(
     },
     ChangePasswordScreen: {
       screen: ChangePasswordScreen,
+      navigationOptions: () => ({
+        header: null,
+      }),
+    },
+    BikeDetailScreen: {
+      screen: BikeDetailScreen,
       navigationOptions: () => ({
         header: null,
       }),

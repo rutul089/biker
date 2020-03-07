@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
   headerRightSide: {
     width: 24,
     height: 24,
-    tintColor: 'black',
+    tintColor: 'white',
     resizeMode: 'contain',
   },
   headerBodyImage: {

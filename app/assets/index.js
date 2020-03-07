@@ -15,11 +15,23 @@ import left from './chevron_left.png';
 import blackBack from './back.png';
 import logout from './logout.png';
 import avtar from './avtar.jpg';
+import filter from './filter.png';
+import search from './search.png';
+import close from './close.png';
+import cycle1 from './cycle1.jpg';
+import direction from './direction.png';
+import star from './star.png';
 
 export {
+  star,
+  cycle1,
+  direction,
+  close,
+  search,
   avtar,
   splashlogo,
   activity,
+  filter,
   logout,
   left,
   blackBack,
