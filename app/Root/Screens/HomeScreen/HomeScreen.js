@@ -1,5 +1,5 @@
-import React, {Component} from 'react';
-import {View, Image} from 'react-native';
+import React, { Component } from 'react';
+import { View, Image } from 'react-native';
 import styles from './HomeScreenStyle';
 import {
   createBottomTabNavigator,
@@ -8,8 +8,8 @@ import {
 } from 'react-navigation';
 import cs from '../../../CommonStyle';
 //--icon
-import {bike, profile, event, home, left, activity} from 'app/assets';
-import {color} from 'app/Theme';
+import { bike, profile, event, home, left, activity } from 'app/assets';
+import { color } from 'app/Theme';
 
 //-- Screen Name
 import BikeTab from './BikeTab';
@@ -23,7 +23,7 @@ const Tab = createBottomTabNavigator(
     Bike: {
       screen: BikeTab,
       navigationOptions: () => ({
-        tabBarIcon: ({tintColor, focused}) => (
+        tabBarIcon: ({ tintColor, focused }) => (
           <Image
             tintColor={tintColor}
             style={styles.selectedIcon}
@@ -35,7 +35,7 @@ const Tab = createBottomTabNavigator(
     Event: {
       screen: EventTab,
       navigationOptions: () => ({
-        tabBarIcon: ({tintColor, focused}) => (
+        tabBarIcon: ({ tintColor, focused }) => (
           <Image
             tintColor={tintColor}
             style={styles.selectedIcon}
@@ -47,7 +47,7 @@ const Tab = createBottomTabNavigator(
     Activity: {
       screen: ActivityTab,
       navigationOptions: () => ({
-        tabBarIcon: ({tintColor, focused}) => (
+        tabBarIcon: ({ tintColor, focused }) => (
           <Image
             tintColor={tintColor}
             style={styles.selectedIcon}
@@ -59,7 +59,7 @@ const Tab = createBottomTabNavigator(
     Home: {
       screen: HomeTab,
       navigationOptions: () => ({
-        tabBarIcon: ({tintColor, focused}) => (
+        tabBarIcon: ({ tintColor, focused }) => (
           <Image
             tintColor={tintColor}
             style={styles.selectedIcon}
@@ -71,7 +71,7 @@ const Tab = createBottomTabNavigator(
     Profile: {
       screen: ProfileTab,
       navigationOptions: () => ({
-        tabBarIcon: ({tintColor, focused}) => (
+        tabBarIcon: ({ tintColor, focused }) => (
           <Image
             tintColor={tintColor}
             style={styles.selectedIcon}
@@ -81,10 +81,13 @@ const Tab = createBottomTabNavigator(
       }),
     },
   },
+
   {
-    defaultNavigationOptions: ({navigation}) => {
+    initialRouteName: "Activity",
+    defaultNavigationOptions: ({ navigation }) => {
       return {
         tabBarOptions: {
+          initialRouteName: "Activity",
           tabBarVisible: true,
           activeTintColor: '#C12020',
           inactiveTintColor: 'gray',
@@ -99,7 +102,7 @@ const Tab = createBottomTabNavigator(
         },
       };
     },
-  },
+  }
 );
 const TabScreen = createStackNavigator({
   HomeScreen: {
@@ -107,7 +110,7 @@ const TabScreen = createStackNavigator({
     lazy: false,
     navigationOptions: {
       header: null,
-      tabBarOnPress: ({navigation, defaultHandler}) => {
+      tabBarOnPress: ({ navigation, defaultHandler }) => {
         defaultHandler();
       },
     },

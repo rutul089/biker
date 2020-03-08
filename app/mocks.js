@@ -133,4 +133,36 @@ const bikeList = [{
     ]
 }]
 
-export { bikeList };
+const agendas = [{
+    'id': 1,
+    'tittle': 'Go biking in morning',
+    'status': 'done',
+    'pin': true,
+    'time': '07.00 AM-09.00 AM'
+}, {
+    'id': 2,
+    'tittle': 'Go bike with friends',
+    'status': 'pending',
+    'pin': false,
+    'time': '04.00 PM-06.00 PM'
+}, {
+    'id': 3,
+    'tittle': 'Perfect day for cycling to work.',
+    'status': 'done',
+    'pin': false,
+    'time': '05.00 PM-06.00 PM'
+}, {
+    'id': 4,
+    'tittle': 'Time to hit the road. ',
+    'status': 'done',
+    'pin': true,
+    'time': '04.00 PM-06.00 PM'
+}, {
+    'id': 5,
+    'tittle': 'Catching up with friends.',
+    'status': 'pending',
+    'pin': false,
+    'time': '04.00 PM-06.00 PM'
+}]
+
+export { bikeList, agendas };

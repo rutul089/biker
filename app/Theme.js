@@ -38,11 +38,11 @@ const sizes = {
   // font sizes
   h1: wp('5.7'), // 26
   h2: wp('4.2'), // 20
-  h3: wp('3.7'), //18
-  title: wp('3.5'), //18
-  header: wp('3.4'), //16
-  body: wp('3.2'), // 14
-  caption: wp('3.1'), //12
+  h3: wp('4'), //18
+  title: wp('3.7'), //18
+  header: wp('3.5'), //16
+  body: wp('3.4'), // 14
+  caption: wp('3.2'), //12
 };
 
 const fonts = {

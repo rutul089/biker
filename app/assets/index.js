@@ -20,9 +20,22 @@ import search from './search.png';
 import close from './close.png';
 import direction from './direction.png';
 import star from './star.png';
+import temp from './temp.png';
+import time from './time.png';
+import icBike from './bike2.png';
+import calendar from './calendar.png';
+import bikestore from './bikestore.png';
+import peppole from './peppole.png';
+import pending from './pending.png';
+import pin from './pin.png';
+import done from './done.png';
 
 export {
   star,
+  icBike, calendar, bikestore, peppole,
+  temp,
+  pending, pin, done,
+  time,
   direction,
   close,
   search,
