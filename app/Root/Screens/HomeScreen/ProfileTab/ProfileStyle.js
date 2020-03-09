@@ -1,5 +1,5 @@
-import { StyleSheet } from 'react-native';
-import { color, sizes } from '../../../../Theme';
+import {StyleSheet} from 'react-native';
+import {color, sizes} from '../../../../Theme';
 import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,
@@ -21,13 +21,13 @@ const styles = StyleSheet.create({
   },
   header: {
     paddingBottom: 25,
-    padding: 20
+    padding: 20,
   },
   avatar: {
     height: sizes.base * 2.2,
-    width: sizes.base * 2.2
+    width: sizes.base * 2.2,
   },
-  iconStyle: { height: wp('5'), width: wp('5'), tintColor: 'black' }
+  iconStyle: {height: wp('5'), width: wp('5'), tintColor: 'black'},
 });
 
 export default styles;

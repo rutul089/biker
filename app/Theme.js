@@ -41,9 +41,26 @@ const sizes = {
   h3: wp('4'), //18
   title: wp('3.7'), //18
   header: wp('3.5'), //16
-  body: wp('3.4'), // 14
-  caption: wp('3.2'), //12
+  body: wp('3.3'), // 14
+  caption: wp('2.9'), //12
 };
+
+// const sizes = {
+//   // global sizes
+//   base: 14,
+//   font: 13,
+//   radius: 6,
+//   padding: 25,
+
+//   // font sizes
+//   h1: 24, // 26
+//   h2: 20, // 20
+//   h3: 18, //18
+//   title: 18, //18
+//   header: 16, //16
+//   body: 14, // 14
+//   caption: 12, //12
+// };
 
 const fonts = {
   h1: {
@@ -69,4 +86,4 @@ const fonts = {
   },
 };
 
-export { color, sizes, fonts };
+export {color, sizes, fonts};

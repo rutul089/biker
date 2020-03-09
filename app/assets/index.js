@@ -29,12 +29,19 @@ import peppole from './peppole.png';
 import pending from './pending.png';
 import pin from './pin.png';
 import done from './done.png';
+import myactivity from './myactivity.png';
 
 export {
   star,
-  icBike, calendar, bikestore, peppole,
+  myactivity,
+  icBike,
+  calendar,
+  bikestore,
+  peppole,
   temp,
-  pending, pin, done,
+  pending,
+  pin,
+  done,
   time,
   direction,
   close,

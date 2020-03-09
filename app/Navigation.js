@@ -1,6 +1,6 @@
 import React from 'react';
-import { createAppContainer, createStackNavigator } from 'react-navigation';
-import { fromRight } from '././navigationTransitions';
+import {createAppContainer, createStackNavigator} from 'react-navigation';
+import {fromRight} from '././navigationTransitions';
 import SplashScreen from './Root/Screens/SplashScreen';
 import WelcomeScreen from './Root/Screens/WelcomeScreen';
 import LoginScreen from './Root/Screens/LoginScreen';
@@ -9,6 +9,7 @@ import HomeScreen from './Root/Screens/HomeScreen';
 import MyProfileScreen from './Root/Screens/MyProfileScreen';
 import ChangePasswordScreen from './Root/Screens/ChangePassword';
 import BikeDetailScreen from './Root/Screens/BikeDetailScreen';
+import MyActivityScreen from './Root/Screens/MyActivityScreen';
 
 console.disableYellowBox = true;
 
@@ -58,6 +59,12 @@ const StackScreen = createStackNavigator(
     },
     BikeDetailScreen: {
       screen: BikeDetailScreen,
+      navigationOptions: () => ({
+        header: null,
+      }),
+    },
+    MyActivityScreen: {
+      screen: MyActivityScreen,
       navigationOptions: () => ({
         header: null,
       }),
